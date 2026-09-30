@@ -164,3 +164,6 @@ Then follow the individual project's instructions, dependencies, and run command
 This repository is a collection of programming projects built while learning, experimenting, and exploring different areas of software development.
 
 **Keep building. Keep experimenting. Keep learning. 🚀**
+
+## Author 
+Bidyadhar Jena

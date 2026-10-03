@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Chatbot</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar">
+      <div class="avatar" aria-hidden="true">AI</div>
+      <div><h1>AI Assistant</h1><p><span class="status-dot"></span> Online · FAQ mode available</p></div>
+    </header>
+    <section id="messages" class="messages" aria-live="polite" aria-label="Chat messages">
+      <div class="message bot"><span class="speaker">Assistant</span><p>Hey! 👋 I'm your AI assistant. What would you like to know?</p></div>
+    </section>
+    <form id="chat-form" class="composer">
+      <label class="sr-only" for="message-input">Your message</label>
+      <input id="message-input" name="message" maxlength="2000" autocomplete="off" placeholder="Message the assistant…" required>
+      <button id="send-button" type="submit" aria-label="Send message">Send <span aria-hidden="true">➤</span></button>
+    </form>
+    <p class="footnote">Demo chatbot · Don't enter passwords or sensitive personal information.</p>
+  </main>
+  <script src="{{ url_for('static', filename='chat.js') }}" defer></script>
+</body>
+</html>

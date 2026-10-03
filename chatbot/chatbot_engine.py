@@ -35,7 +35,7 @@ def _faq_reply(message: str) -> str:
 
 def generate_reply(message: str) -> str:
     """Generate a reply. Uses OpenAI when configured; otherwise uses local FAQs."""
-    api_key = os.getenv("OPENAI_API_KEY", "").strip()
+    api_key = os.getenv("API_KEY", "").strip()
     if not api_key:
         return _faq_reply(message)
 

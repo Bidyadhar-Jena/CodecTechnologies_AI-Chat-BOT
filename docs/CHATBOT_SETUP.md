@@ -1,6 +1,6 @@
-# AI Chatbot: setup and integration
+# AI Chatbot Setup
 
-This is an **add-on pack** for the existing repository. It adds a working Flask chat interface and reply endpoint without replacing any of the files already in the project.
+This document explains how to install, configure, run, and test the AI-Powered Chatbot.
 
 ## Run locally
 
